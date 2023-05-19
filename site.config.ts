@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Felix Nguyen Blog',
-  domain: 'annq-felix.vercel.app',
+  domain: 'annqfelix.vercel.app',
   author: 'An Nguyen Q. (Felix)',
 
   // open graph metadata (optional)
