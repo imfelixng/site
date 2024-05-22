@@ -1,25 +1,25 @@
-import { siteConfig } from './lib/site-config'
+import { siteConfig } from "./lib/site-config";
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '4e4fb181f4d345bbb27676be974e58b7',
+  rootNotionPageId: "4e4fb181f4d345bbb27676be974e58b7",
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Felix Nguyen Blog',
-  domain: 'annqfelix.vercel.app',
-  author: 'An Nguyen Q. (Felix)',
+  name: "Felix Nguyen Blog",
+  domain: "felixng.dev",
+  author: "Felix Nguyen",
 
   // open graph metadata (optional)
-  description: 'Felix Nguyen Blog',
+  description: "Felix Nguyen Blog",
 
   // social usernames (optional)
-  twitter: 'annqfelix',
-  github: 'annqfelix',
-  linkedin: 'annqfelix',
+  twitter: "im_felixng",
+  github: "imfelixng",
+  linkedin: "imfelixng",
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
@@ -50,7 +50,7 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default',
+  navigationStyle: "default",
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
@@ -58,4 +58,4 @@ export default siteConfig({
   //     pageId: '4e4fb181f4d345bbb27676be974e58b7'
   //   }
   // ]
-})
+});

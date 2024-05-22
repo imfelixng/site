@@ -1,10 +1,10 @@
 {
-  "name": "@alanfelix/site",
+  "name": "@imfelixng/site",
   "version": "2.0.0",
   "private": true,
-  "description": "The perfect starter kit for building beautiful websites with Next.js and Notion.",
-  "author": "An Nguyen Q. <alan.felix@gmail.com>",
-  "repository": "annqfelix/site.git",
+  "description": "Personal Blog",
+  "author": "Felix Nguyen <im.felixng@gmail.com>",
+  "repository": "imfelixng/site.git",
   "license": "MIT",
   "engines": {
     "node": ">=16"
