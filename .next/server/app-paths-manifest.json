@@ -1,9 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/about/page": "app/about/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/articles/crafting-a-design-system-for-a-multiplanetary-future/page": "app/articles/crafting-a-design-system-for-a-multiplanetary-future/page.js",
-  "/uses/page": "app/uses/page.js",
-  "/articles/page": "app/articles/page.js"
-}
