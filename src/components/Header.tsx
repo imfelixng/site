@@ -357,12 +357,13 @@ export function Header() {
   return (
     <>
       <header
-        className="pointer-events-none relative z-50 flex flex-none flex-col"
+        className="relative pointer-events-none relative z-50 flex flex-none flex-col"
         style={{
           height: 'var(--header-height)',
           marginBottom: 'var(--header-mb)',
         }}
       >
+        <div className='absolute blur-xs top-0 left-0 right-0 bottom-0 bg-zinc-50 dark:bg-black'/>
         {isHomePage && (
           <>
             <div

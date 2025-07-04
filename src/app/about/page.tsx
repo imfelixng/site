@@ -4,13 +4,9 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import { socialData } from '@/data'
+import { socialIconsMap } from '@/components/icons'
 
 function SocialLink({
   className,
@@ -33,17 +29,6 @@ function SocialLink({
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
-}
-
-function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
   )
 }
 
@@ -103,25 +88,16 @@ export default function About() {
         </div>
         <div className="lg:pl-20">
           <ul role="list">
-            <SocialLink href="#" icon={XIcon}>
-              Follow on X
-            </SocialLink>
-            <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-              Follow on Instagram
-            </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-              Follow on GitHub
-            </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-              Follow on LinkedIn
-            </SocialLink>
-            <SocialLink
-              href="mailto:spencer@planetaria.tech"
-              icon={MailIcon}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-            >
-              spencer@planetaria.tech
-            </SocialLink>
+            {socialData.map((e) => (
+              <SocialLink
+                key={e.key}
+                href={e.link}
+                icon={socialIconsMap[e.key]}
+                className="mt-4"
+              >
+                {e.value}
+              </SocialLink>
+            ))}
           </ul>
         </div>
       </div>
